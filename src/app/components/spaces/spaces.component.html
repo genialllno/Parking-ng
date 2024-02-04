@@ -1,0 +1,52 @@
+<div class="container">
+    <mat-grid-list cols="{{ columns }}" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let cell of data; let i = index"  (click)="goToSpace(cell)">
+            <div>
+                {{ cell }}
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>      
+</div>
+
+<div class="container">
+    <mat-grid-list cols="{{ columns1 }}" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let cell1 of data1; let i = index"  (click)="goToSpace(cell1)">
+            <div>
+                {{ cell1 }}
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>      
+</div>
+
+<div class="container">
+    <mat-grid-list cols="{{ columns2 }}" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let cell2 of data2; let i = index"  (click)="goToSpace(cell2)">
+            <div>
+                {{ cell2 }}
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>      
+</div>
+
+<div class="container">
+    <mat-grid-list cols="{{ columns3 }}" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let cell3 of data3; let i = index"  (click)="goToSpace(cell3)">
+            <div>
+                {{ cell3 }}
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>      
+</div>
+
+
+<!-- <div *ngFor="let dataSet of dataSets" class="container">
+    <mat-grid-list [cols]="dataSet.columns" rowHeight="2:1">
+      <mat-grid-tile *ngFor="let cell of dataSet.data; let i = index">
+        <div (click)="goToSpace(cell)">
+          {{ cell }}
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+</div> -->
+
+
