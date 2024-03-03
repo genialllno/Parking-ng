@@ -14,6 +14,16 @@ import { BaseComponent } from './components/base/base.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { DialogBoxComponent } from './components/dialog-box/dialog-box.component';
+import {MatDialogModule} from '@angular/material/dialog'; 
+import {MatInputModule} from '@angular/material/input'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DialogRenterComponent } from './components/dialog-renter/dialog-renter.component';
+import { RomanNumeralPipe } from './components/spaces/roman-numeral.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +32,11 @@ import {MatListModule} from '@angular/material/list';
     HeaderComponent,
     SpacesComponent,
     SpaceDetailsComponent,
-    BaseComponent
+    BaseComponent,
+    DialogBoxComponent,
+    DialogRenterComponent,
+    RomanNumeralPipe,
+    
   ],
   imports: [
     BrowserModule,
@@ -31,11 +45,22 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
+    MatProgressBarModule,
+    MatDividerModule,
+    MatCardModule,
+    MatDialogModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
+    
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient(withFetch()),
+    RomanNumeralPipe
   ],
   bootstrap: [AppComponent]
 })

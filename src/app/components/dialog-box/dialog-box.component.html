@@ -1,0 +1,56 @@
+<form [formGroup]="myFormOwner" (ngSubmit)="onSubmit()" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Власник ФИО:</mat-label>
+      <input matInput formControlName="OwnerFullName">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Марка машини:</mat-label>
+      <input matInput formControlName="OwnerCarBrand">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Рiк випуску машини: (ОБЯЗАТЕЛЬНО!!!)</mat-label>
+      <input matInput formControlName="OwnerCarYear">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Номер машини:</mat-label>
+      <input matInput formControlName="OwnerLicensePlate">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Номер тех паспорта:</mat-label>
+      <input matInput formControlName="OwnerTechPassportNumber">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Номер кузова:</mat-label>
+      <input matInput formControlName="OwnerBodyNumber">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Колiр авто:</mat-label>
+      <input matInput formControlName="OwnerCarColor">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Телефон:</mat-label>
+      <input matInput formControlName="OwnerPhoneNumber">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Прописка:</mat-label>
+      <input matInput formControlName="OwnerAddress">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Дата купування мiсця:</mat-label>
+      <input matInput formControlName="OwnerDateAt">
+    </mat-form-field>
+    
+
+    <button class="button" mat-flat-button color="primary"  type="submit">Редактировать</button>
+    <button mat-flat-button color="primary" style="margin-left: 4px" (click)="onNoClick()" type="button">Отмена</button>
+</form>
+  

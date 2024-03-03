@@ -8,19 +8,47 @@
     </mat-grid-list>      
 </div>
 
-<div class="container">
-    <mat-grid-list cols="{{ columns1 }}" rowHeight="2:1">
-        <mat-grid-tile *ngFor="let cell1 of data1; let i = index"  (click)="goToSpace(cell1)">
+
+<div class="YANA">
+    <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile (click)="goToSpace(499)">
             <div>
-                {{ cell1 }}
+                {{ '361a' }}
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile (click)="goToSpace(500)">
+            <div>
+                {{ '361б' }}
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile (click)="goToSpace(501)">
+            <div>
+                {{ '361в' }}
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile (click)="goToSpace(502)">
+            <div>
+                {{ '432a' }}
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile (click)="goToSpace(503)">
+            <div>
+                {{ '432б' }}
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile (click)="goToSpace(504)">
+            <div>
+                {{ '432в' }}
             </div>
         </mat-grid-tile>
     </mat-grid-list>      
 </div>
 
+
+
 <div class="container">
     <mat-grid-list cols="{{ columns2 }}" rowHeight="2:1">
-        <mat-grid-tile *ngFor="let cell2 of data2; let i = index"  (click)="goToSpace(cell2)">
+        <mat-grid-tile *ngFor="let cell2 of data2; let i = index"  (click)="goToSpace(504 + cell2)">
             <div>
                 {{ cell2 }}
             </div>
@@ -30,23 +58,14 @@
 
 <div class="container">
     <mat-grid-list cols="{{ columns3 }}" rowHeight="2:1">
-        <mat-grid-tile *ngFor="let cell3 of data3; let i = index"  (click)="goToSpace(cell3)">
+        <mat-grid-tile *ngFor="let cell3 of data3; let i = index"  (click)="goToSpace(687 + cell3)">
             <div>
-                {{ cell3 }}
+                {{ cell3 | romanNumeral }}
             </div>
         </mat-grid-tile>
     </mat-grid-list>      
 </div>
 
 
-<!-- <div *ngFor="let dataSet of dataSets" class="container">
-    <mat-grid-list [cols]="dataSet.columns" rowHeight="2:1">
-      <mat-grid-tile *ngFor="let cell of dataSet.data; let i = index">
-        <div (click)="goToSpace(cell)">
-          {{ cell }}
-        </div>
-      </mat-grid-tile>
-    </mat-grid-list>
-</div> -->
 
 

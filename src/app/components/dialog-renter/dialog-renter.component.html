@@ -1,0 +1,56 @@
+<form [formGroup]="myFormRenter" (ngSubmit)="onSubmit()" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Орендатор ФИО:</mat-label>
+      <input matInput formControlName="RenterFullName">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Марка машини:</mat-label>
+      <input matInput formControlName="RenterCarBrand">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Рiк випуску машини: (ОБЯЗАТЕЛЬНО!!!)</mat-label>
+      <input matInput formControlName="RenterCarYear">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Номер машини:</mat-label>
+      <input matInput formControlName="RenterLicensePlate">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Номер тех паспорта:</mat-label>
+      <input matInput formControlName="RenterTechPassportNumber">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Номер кузова:</mat-label>
+      <input matInput formControlName="RenterBodyNumber">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Колiр авто:</mat-label>
+      <input matInput formControlName="RenterCarColor">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Телефон:</mat-label>
+      <input matInput formControlName="RenterPhoneNumber">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Прописка:</mat-label>
+      <input matInput formControlName="RenterAddress">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Дата начала оренди мiсця:</mat-label>
+      <input matInput formControlName="RenterDateAt">
+    </mat-form-field>
+    
+
+    <button class="button" mat-flat-button color="primary"  type="submit">Редактировать</button>
+    <button mat-flat-button color="primary" style="margin-left: 4px" (click)="onNoClick()" type="button">Отмена</button>
+</form>
+  

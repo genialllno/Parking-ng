@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+}
+
+button {
+  margin-left: 20px;
+  background: rgb(0, 16, 236);
+}
+
+.example-card {
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+    background-color:rgb(129, 150, 177)
+  }
+
+  .title{
+    margin: 3px;
+
+  }
+
+  .subTitle{
+    margin: 8px;
+    font-size: 20px;
+    color:rgb(0, 0, 0)
+  }
